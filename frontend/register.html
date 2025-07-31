@@ -1,0 +1,26 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register</title>
+  <script src="js/auth.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8">
+  <form id="registerForm" class="space-y-4 max-w-md mx-auto">
+    <input type="text" name="username" placeholder="Username" required class="w-full border p-2 rounded" />
+    <input type="email" name="email" placeholder="Email" required class="w-full border p-2 rounded" />
+    <input type="password" name="password" placeholder="Password" required class="w-full border p-2 rounded" />
+    <select name="role" id="role" required class="w-full border p-2 rounded">
+      <option value="">Select Role</option>
+      <option value="admin">Admin</option>
+      <option value="manager">Manager</option>
+      <option value="employee">Employee</option>
+    </select>
+    <div id="skillField" class="hidden">
+      <input type="text" name="skills" placeholder="Comma separated skills (only for employees)" class="w-full border p-2 rounded" />
+    </div>
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Register</button>
+  </form>
+</body>
+</html>
