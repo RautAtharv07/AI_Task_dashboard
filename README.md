@@ -33,31 +33,31 @@ This project is an intelligent task management backend built with **FastAPI** an
 
 ## ⚙️ Setup Instructions
 
-# 1. Clone the repository
+ 1. Clone the repository
 git clone https://github.com/RautAtharv07/AI_Task_dashboard.git
 cd AI_Task_dashboard
 
-# 2. Create a virtual environment
+ 2. Create a virtual environment
 python -m venv .venv
 
-# 3. Activate the virtual environment
-# On Windows:
+ 3. Activate the virtual environment
+ On Windows:
 .venv\Scripts\activate
-# On macOS/Linux:
+ On macOS/Linux:
 source .venv/bin/activate
 
-# 4. Install dependencies
+ 4. Install dependencies
 pip install -r requirements.txt
 
-# 5. Create a .env file in the root directory with the following keys
-# (Use your actual API key and email config)
-echo "OPENAI_API_KEY=your_openai_key_here
-EMAIL_SENDER=your_verified_email@example.com
-SMTP_PASSWORD=your_smtp_password
-SMTP_SERVER=smtp.your_email_provider.com
-SMTP_PORT=587" > .env
+ 5. Create a .env file in the root directory with the following keys
+(Use your actual API key and email config)
+-echo "OPENAI_API_KEY=your_openai_key_here
+-EMAIL_SENDER=your_verified_email@example.com
+-SMTP_PASSWORD=your_smtp_password
+-SMTP_SERVER=smtp.your_email_provider.com
+-SMTP_PORT=587" > .env
 
-# 6. Start the FastAPI server
+ 6. Start the FastAPI server
 uvicorn main:app --reload
 
 Open your browser at: http://127.0.0.1:8000/docs
